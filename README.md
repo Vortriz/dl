@@ -25,7 +25,6 @@ A simple command-line tool to download files using `aria2c` and automatically so
     ```
 
 2.  **Install the package:**
-    Using `uv`:
     ```bash
     uv tool install .
     ```
@@ -52,7 +51,7 @@ Or if you are using flakes, you can install it system-wide by adding the followi
 }
 ```
 
-and then adding `dl.packages.${system}.dl` to your `environment.systemPackages`/`home.packages`.
+and then adding `dl.packages.${system}.dl` to your `environment.systemPackages` or `home.packages`.
 
 ## Usage
 
@@ -94,11 +93,13 @@ On its first run, the tool will create a default configuration file at `~/.confi
 }
 ```
 
+You can add more categories or modify existing ones by editing the `CATEGORIES` section.
+
 ### Configuration Options
 
-- **`DOWNLOADS_DIR`**: The base directory where categorized downloads will be saved.
-- **`CATEGORIES`**: A mapping of category names to lists of file extensions. Files with these extensions will be moved into a subdirectory with the category name. Files that don't match any category will be placed in a directory named `misc`.
-- **`ARIA2_HOST`**: The hostname for the `aria2c` RPC interface.
-- **`ARIA2_PORT`**: The port for the `aria2c` RPC interface.
-- **`ARIA2_SECRET`**: The secret token for the `aria2c` RPC interface. This can also be set via the `ARIA2_SECRET` environment variable, which will take precedence.
-- **`UPDATE_INTERVAL`**: The refresh rate (in seconds) for the progress bar.
+- `DOWNLOADS_DIR`: The base directory where categorized downloads will be saved.
+- `CATEGORIES`: A mapping of category names to lists of file extensions. Files with these extensions will be moved into a subdirectory with the category name. Files that don't match any category will be placed in a directory named `misc`.
+- `ARIA2_HOST`: The hostname for the `aria2c` RPC interface.
+- `ARIA2_PORT`: The port for the `aria2c` RPC interface.
+- `ARIA2_SECRET`: The secret token for the `aria2c` RPC interface. This can also be set via the `ARIA2_SECRET` environment variable, which will take precedence.
+- `UPDATE_INTERVAL`: The refresh rate (in seconds) for the progress bar.
