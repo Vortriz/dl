@@ -20,7 +20,7 @@ buildPythonApplication {
             "src"
             ./pyproject.toml
             ./uv.lock
-            # ./README.md
+            ./README.md
         ];
     };
 
