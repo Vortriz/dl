@@ -34,7 +34,7 @@ buildPythonApplication {
     meta = with lib; {
         description = "A simple command-line tool to download files using `aria2c` and automatically sort them into categorized directories.";
         homepage = "https://github.com/Vortriz/dl";
-        license = licenses.gpl3Plus;
+        license = licenses.gpl3Only;
         mainProgram = "dl";
     };
 }
