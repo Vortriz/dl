@@ -1,0 +1,23 @@
+[project]
+name = "dl"
+version = "0.1.0"
+description = "A simple command-line tool to download files using `aria2c` and automatically sort them into categorized directories."
+readme = "README.md"
+authors = [
+    { name = "Vortriz", email = "vorarishi22+github@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "aria2p>=0.12.1",
+    "click>=8.3.1",
+]
+
+[project.scripts]
+dl = "dl:main"
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
