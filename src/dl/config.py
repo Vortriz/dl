@@ -11,7 +11,7 @@ DEFAULT_CONFIG = {
     "DOWNLOADS_DIR": str(pathlib.Path.home() / "Downloads"),
     "CATEGORIES": {
         "apks": ["apk"],
-        "compressed": ["zip", "rar", "7z", "tar", "gz"],
+        "archives": ["zip", "rar", "7z", "tar", "gz"],
         "media": ["mp4", "mkv", "avi", "flv", "mov"],
         "music": ["mp3", "flac", "wav", "ogg"],
     },

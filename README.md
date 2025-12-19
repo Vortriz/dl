@@ -82,7 +82,7 @@ On its first run, the tool will create a default configuration file at `~/.confi
     "DOWNLOADS_DIR": "~/Downloads",
     "CATEGORIES": {
         "apks": ["apk"],
-        "compressed": ["zip", "rar", "7z", "tar", "gz"],
+        "archives": ["zip", "rar", "7z", "tar", "gz"],
         "media": ["mp4", "mkv", "avi", "flv", "mov"],
         "music": ["mp3", "flac", "wav", "ogg"]
     },
