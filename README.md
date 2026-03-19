@@ -2,6 +2,9 @@
 
 A simple command-line tool to download files using `aria2c` and automatically sort them into categorized directories.
 
+> [!NOTE]
+> I have shifted over to [Surge](https://github.com/surge-downloader/Surge).
+
 ## Features
 
 - **Automatic Sorting**: Organizes downloaded files into categories (e.g., media, compressed, music) based on their file extension.
